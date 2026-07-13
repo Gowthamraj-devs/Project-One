@@ -207,154 +207,296 @@
   </div>
 </section>
 
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="container fade-up">
+    <p class="section-label light">What's New</p>
+    <h2 class="light">Now Available</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🍽️</div>
+        <h3>Catering Services</h3>
+        <p class="service-desc">Bring the authentic Thottathu Virundhu experience to your weddings, celebrations, and corporate events. Our team prepares fresh Kongunadu cuisine on-site with zero compromises on taste and quality.</p>
+        <div class="service-highlights">
+          <span class="service-tag">Weddings</span>
+          <span class="service-tag">Events</span>
+          <span class="service-tag">Corporate</span>
+          <span class="service-tag">Parties</span>
+        </div>
+        <a href="tel:+919842742126" class="service-cta">📞 Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌿</div>
+        <h3>Open Ground Garden</h3>
+        <p class="service-desc">Dine under the open sky in our beautiful garden space. Perfect for family gatherings, birthday celebrations, and private events with lush green surroundings and a village ambience.</p>
+        <div class="service-highlights">
+          <span class="service-tag">Family Gatherings</span>
+          <span class="service-tag">Birthdays</span>
+          <span class="service-tag">Private Events</span>
+        </div>
+        <a href="tel:+919842742126" class="service-cta">📞 Book the Garden</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MENU -->
 <section id="menu" class="menu-section">
   <div class="container fade-up">
     <p class="section-label">Our Menu</p>
     <h2>A taste of what awaits</h2>
-    <p class="menu-sub">We serve different specialities at each mealtime — tap a session to explore.</p>
+    <p class="menu-sub">We serve different specialities at each mealtime — tap to explore.</p>
 
-    <!-- Time Tabs -->
-    <div class="time-tabs" role="tablist">
-      <button class="time-tab active" id="tab-morning"   role="tab" aria-selected="true"  data-target="panel-morning">
-        <span class="tab-icon">🌅</span>
-        <span class="tab-label">Morning</span>
-        <span class="tab-time">7 AM – 10:30 AM</span>
+    <!-- Lunch / Dinner Buttons -->
+    <div class="time-tabs">
+      <button class="time-tab" id="btn-lunch" data-modal="modal-lunch">
+        <span class="tab-icon">🌞</span>
+        <span class="tab-label">Lunch</span>
+        <span class="tab-time">12:30 PM – 4:00 PM</span>
       </button>
-      <button class="time-tab" id="tab-afternoon" role="tab" aria-selected="false" data-target="panel-afternoon">
-        <span class="tab-icon">☀️</span>
-        <span class="tab-label">Afternoon</span>
-        <span class="tab-time">12:30 PM – 4 PM</span>
-      </button>
-      <button class="time-tab" id="tab-dinner"    role="tab" aria-selected="false" data-target="panel-dinner">
+      <button class="time-tab" id="btn-dinner" data-modal="modal-dinner">
         <span class="tab-icon">🌙</span>
-        <span class="tab-label">Night</span>
-        <span class="tab-time">6:30 PM – 10 PM</span>
+        <span class="tab-label">Dinner</span>
+        <span class="tab-time">6:30 PM – 10:00 PM</span>
       </button>
-    </div>
-
-    <!-- Morning Panel (7 AM – 10:30 AM) -->
-    <div class="time-panel active" id="panel-morning" role="tabpanel">
-      <div class="time-panel-grid">
-        <div class="menu-card">
-          <div class="menu-card-header">🍳 Tiffin &amp; Dosa</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Dosa</span></div>
-            <div class="menu-row"><span>Egg Dosa</span></div>
-            <div class="menu-row"><span>Salem Dosa</span></div>
-            <div class="menu-row"><span>Idly</span></div>
-            <div class="menu-row"><span>Parotta</span></div>
-            <div class="menu-row"><span>Appam</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🍗 Meat Gravies</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Chicken Kari</span></div>
-            <div class="menu-row"><span>Mutton Kari</span></div>
-            <div class="menu-row"><span>Kodel Kari</span></div>
-            <div class="menu-row"><span>Thalaikari</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🥩 Dry &amp; Specials</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>TVS Special Chicken</span></div>
-            <div class="menu-row"><span>Mutton Chukka</span></div>
-            <div class="menu-row"><span>Kothu Kari</span></div>
-            <div class="menu-row"><span>Eral (Prawn)</span></div>
-            <div class="menu-row"><span>Ratha Poriyal</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="allday-strip">
-        <span class="allday-label">Always Available</span>
-        <span class="allday-item">Semiya Payasam</span>
-        <span class="allday-item">Elaneer Payasam</span>
-        <span class="allday-item">Paneer Soda</span>
-      </div>
-    </div>
-
-    <!-- Afternoon Panel (12:30 PM – 4 PM) -->
-    <div class="time-panel" id="panel-afternoon" role="tabpanel">
-      <div class="time-panel-grid">
-        <div class="menu-card">
-          <div class="menu-card-header">🍚 Rice &amp; Biryani</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Rice</span></div>
-            <div class="menu-row"><span>Biryani <span class="biryani-badge">Wed &amp; Sun only</span></span></div>
-            <div class="menu-row"><span>Curd</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🍗 Chicken</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Chicken Kari</span></div>
-            <div class="menu-row"><span>Chicken 65</span></div>
-            <div class="menu-row"><span>Chicken Lollipop</span></div>
-            <div class="menu-row"><span>Pichu Potta Chicken</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🥩 Mutton &amp; Veg</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Mutton Kari</span></div>
-            <div class="menu-row"><span>Kalan Pulipalayam</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="allday-strip">
-        <span class="allday-label">Always Available</span>
-        <span class="allday-item">Semiya Payasam</span>
-        <span class="allday-item">Elaneer Payasam</span>
-        <span class="allday-item">Paneer Soda</span>
-      </div>
-    </div>
-
-    <!-- Night Panel (6:30 PM – 10 PM) -->
-    <div class="time-panel" id="panel-dinner" role="tabpanel">
-      <div class="time-panel-grid">
-        <div class="menu-card">
-          <div class="menu-card-header">🍳 Dosa Varieties</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Egg Dosa</span></div>
-            <div class="menu-row"><span>Podi Dosa</span></div>
-            <div class="menu-row"><span>Salem Dosa</span></div>
-            <div class="menu-row"><span>Kal Dosa</span></div>
-            <div class="menu-row"><span>Kari Dosa</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🥘 Kothu Items</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Kothu Dosa</span></div>
-            <div class="menu-row"><span>Kothu Idly</span></div>
-            <div class="menu-row"><span>Kothu Chapathi</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-card-header">🫓 Tiffin &amp; Sides</div>
-          <div class="menu-items">
-            <div class="menu-row"><span>Idly</span></div>
-            <div class="menu-row"><span>Chapathi</span></div>
-            <div class="menu-row"><span>Rotti</span></div>
-            <div class="menu-row"><span>Paniyaram</span></div>
-            <div class="menu-row"><span>Egg Paniyaram</span></div>
-            <div class="menu-row"><span>Curd</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="allday-strip">
-        <span class="allday-label">Always Available</span>
-        <span class="allday-item">Semiya Payasam</span>
-        <span class="allday-item">Elaneer Payasam</span>
-        <span class="allday-item">Paneer Soda</span>
-      </div>
     </div>
 
     <p class="menu-note">📞 Call us at +91 98427 42126 to enquire about today's specials</p>
   </div>
 </section>
+
+<!-- ═══ LUNCH MODAL ═══ -->
+<div class="mc-modal" id="modal-lunch">
+  <div class="mc-backdrop"></div>
+  <div class="mc-modal-body">
+    <button class="mc-close" aria-label="Close menu">&times;</button>
+    <div class="mc-outer">
+      <div class="mc-inner">
+        <span class="mc-corner mc-tl">✦</span>
+        <span class="mc-corner mc-tr">✦</span>
+        <span class="mc-corner mc-bl">✦</span>
+        <span class="mc-corner mc-br">✦</span>
+
+        <div class="mc-header">
+          <h3 class="mc-title">🌞 Lunch Menu</h3>
+          <p class="mc-time">🕛 12:30 PM – 4:00 PM</p>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍛</span> Meals</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Meals (Sapadu)</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
+          <div class="mc-items-grid">
+            <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
+            <div class="mc-item">Nattu Kozhi Pallipalayam</div>
+            <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
+            <div class="mc-item">Nattu Kozhi Gravy</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Mutton Sukka</div>
+            <div class="mc-item">Mutton Kothu Kari</div>
+            <div class="mc-item">Thala Kari (Boneless)</div>
+            <div class="mc-item">Mutton Eral</div>
+            <div class="mc-item">Mutton Moolai Fry</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Chicken 65 (Boneless)</div>
+            <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
+            <div class="mc-item">Picha Potta Chicken</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Andhra Kalaki</div>
+            <div class="mc-item">Kulambu Kalaki</div>
+            <div class="mc-item">Onion Kalaki</div>
+            <div class="mc-item">Kalaki</div>
+            <div class="mc-item">Egg Poriyal</div>
+            <div class="mc-item">Andhra Egg Poriyal</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Kalan Pallipalayam</div>
+            <div class="mc-item">Paneer 65</div>
+            <div class="mc-item">Baby Corn 65</div>
+            <div class="mc-item">Cauliflower 65</div>
+            <div class="mc-item">Veg Kulambu</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍲</span> Gravies</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Veg Kulambu</div>
+            <div class="mc-item">Non-Veg Kulambu</div>
+          </div>
+        </div>
+
+        <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DINNER MODAL ═══ -->
+<div class="mc-modal" id="modal-dinner">
+  <div class="mc-backdrop"></div>
+  <div class="mc-modal-body">
+    <button class="mc-close" aria-label="Close menu">&times;</button>
+    <div class="mc-outer">
+      <div class="mc-inner">
+        <span class="mc-corner mc-tl">✦</span>
+        <span class="mc-corner mc-tr">✦</span>
+        <span class="mc-corner mc-bl">✦</span>
+        <span class="mc-corner mc-br">✦</span>
+
+        <div class="mc-header">
+          <h3 class="mc-title">🌙 Dinner Menu</h3>
+          <p class="mc-time">🕡 6:30 PM – 10:00 PM</p>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥞</span> Dosa Varieties</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Dosa</div>
+            <div class="mc-item">Kal Dosa</div>
+            <div class="mc-item">Nei Dosa</div>
+            <div class="mc-item">Egg Dosa</div>
+            <div class="mc-item">Onion Dosa</div>
+            <div class="mc-item">Kari Kal Dosa (Chicken / Mutton)</div>
+            <div class="mc-item">Podi Dosa</div>
+            <div class="mc-item">Nei Podi Dosa</div>
+            <div class="mc-item">Salem Dosa</div>
+            <div class="mc-item">Nei Nice</div>
+            <div class="mc-item">Egg Nice</div>
+            <div class="mc-item">Onion Nice</div>
+            <div class="mc-item">Roast</div>
+            <div class="mc-item">Nei Roast</div>
+            <div class="mc-item">Onion Roast</div>
+            <div class="mc-item">Poondu Dosa</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍽️</span> Kothu Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Chicken Kothu Dosa</div>
+            <div class="mc-item">Mutton Kothu Dosa</div>
+            <div class="mc-item">Kalan Kothu Dosa</div>
+            <div class="mc-item">Paneer Kothu Dosa</div>
+            <div class="mc-item">Egg Kothu Dosa</div>
+            <div class="mc-item">Tomato Kothu Dosa</div>
+            <div class="mc-item">Brinjal Kothu Dosa</div>
+            <div class="mc-item">Poondu Kothu Dosa</div>
+            <div class="mc-item">Chicken Kothu Idli</div>
+            <div class="mc-item">Mutton Kothu Idli</div>
+            <div class="mc-item">Chicken Kothu Chapathi</div>
+            <div class="mc-item">Mutton Kothu Chapathi</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍞</span> Tiffin</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Idli</div>
+            <div class="mc-item">Roti</div>
+            <div class="mc-item">Chapathi</div>
+          </div>
+        </div>
+
+        <hr class="mc-thin-rule"/>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍛</span> Meals</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Meals (Sapadu)</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
+          <div class="mc-items-grid">
+            <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
+            <div class="mc-item">Nattu Kozhi Pallipalayam</div>
+            <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
+            <div class="mc-item">Nattu Kozhi Gravy</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Mutton Sukka</div>
+            <div class="mc-item">Mutton Kothu Kari</div>
+            <div class="mc-item">Thala Kari (Boneless)</div>
+            <div class="mc-item">Mutton Eral</div>
+            <div class="mc-item">Mutton Moolai Fry</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Chicken 65 (Boneless)</div>
+            <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
+            <div class="mc-item">Picha Potta Chicken</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Andhra Kalaki</div>
+            <div class="mc-item">Kulambu Kalaki</div>
+            <div class="mc-item">Onion Kalaki</div>
+            <div class="mc-item">Kalaki</div>
+            <div class="mc-item">Egg Poriyal</div>
+            <div class="mc-item">Andhra Egg Poriyal</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Kalan Pallipalayam</div>
+            <div class="mc-item">Paneer 65</div>
+            <div class="mc-item">Baby Corn 65</div>
+            <div class="mc-item">Cauliflower 65</div>
+            <div class="mc-item">Veg Kulambu</div>
+          </div>
+        </div>
+
+        <div class="mc-category">
+          <div class="mc-cat-header"><span>🍲</span> Gravies</div>
+          <div class="mc-items-grid">
+            <div class="mc-item">Veg Kulambu</div>
+            <div class="mc-item">Non-Veg Kulambu</div>
+          </div>
+        </div>
+
+        <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- VISIT -->
 

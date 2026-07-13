@@ -32,33 +32,54 @@ fadeEls.forEach(el => observer.observe(el));
 // Hero fades in on load
 document.querySelector('#hero .fade-up').classList.add('visible');
 
-// ===== TIME-SLOT MENU TABS =====
-const tabs   = document.querySelectorAll('.time-tab');
-const panels = document.querySelectorAll('.time-panel');
+// ===== MENU CARD MODALS (Zoom open / close) =====
 
-function activateTab(tab) {
-  tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
-  panels.forEach(p => p.classList.remove('active'));
-  tab.classList.add('active');
-  tab.setAttribute('aria-selected', 'true');
-  document.getElementById(tab.dataset.target).classList.add('active');
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (!modal) return;
+  modal.classList.remove('closing');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden'; // prevent bg scroll
+  // Scroll modal body to top
+  const body = modal.querySelector('.mc-modal-body');
+  if (body) body.scrollTop = 0;
 }
 
-tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab)));
+function closeModal(modal) {
+  modal.classList.add('closing');
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+  // Remove closing class after animation
+  setTimeout(() => {
+    modal.classList.remove('closing');
+  }, 380);
+}
 
-// Auto-select tab based on current time of day
-(function autoTab() {
-  const now  = new Date();
-  const mins = now.getHours() * 60 + now.getMinutes();
-  // Morning  07:00 – 10:30
-  // Afternoon 12:30 – 16:00
-  // Night    18:30 – 22:00
-  let targetId;
-  if      (mins >= 420  && mins < 630)  targetId = 'tab-morning';
-  else if (mins >= 750  && mins < 960)  targetId = 'tab-afternoon';
-  else if (mins >= 1110 && mins < 1320) targetId = 'tab-dinner';
-  else if (mins < 420 || mins >= 1320)  targetId = 'tab-morning';   // before morning / after night → show morning
-  else                                  targetId = 'tab-afternoon';  // gaps between sessions
-  const autoTabEl = document.getElementById(targetId);
-  if (autoTabEl) activateTab(autoTabEl);
-})();
+// Tab buttons → open modal
+document.querySelectorAll('.time-tab[data-modal]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    openModal(btn.dataset.modal);
+  });
+});
+
+// Close on backdrop click
+document.querySelectorAll('.mc-backdrop').forEach(backdrop => {
+  backdrop.addEventListener('click', () => {
+    closeModal(backdrop.closest('.mc-modal'));
+  });
+});
+
+// Close on × button click
+document.querySelectorAll('.mc-close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    closeModal(btn.closest('.mc-modal'));
+  });
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const openModal = document.querySelector('.mc-modal.open');
+    if (openModal) closeModal(openModal);
+  }
+});
