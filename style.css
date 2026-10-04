@@ -195,7 +195,7 @@ h2.light {
 }
 
 .nav-logo-img {
-  height: 48px;
+  height: 46px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -210,6 +210,12 @@ h2.light {
   flex-direction: column;
 }
 
+.logo-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .logo-title {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -219,9 +225,22 @@ h2.light {
   letter-spacing: 0.02em;
 }
 
+.demo-badge {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--gold-dark);
+  background: rgba(212, 150, 10, 0.15);
+  border: 1px solid rgba(212, 150, 10, 0.4);
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .logo-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--gold-dark);
   font-style: italic;
 }
@@ -230,12 +249,12 @@ h2.light {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--text-dark);
   position: relative;
@@ -352,9 +371,9 @@ h2.light {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, 
-    rgba(16, 22, 26, 0.75) 0%, 
-    rgba(16, 22, 26, 0.65) 50%, 
-    rgba(16, 22, 26, 0.92) 100%);
+    rgba(16, 22, 26, 0.78) 0%, 
+    rgba(16, 22, 26, 0.68) 50%, 
+    rgba(16, 22, 26, 0.94) 100%);
   z-index: 1;
 }
 
@@ -371,7 +390,7 @@ h2.light {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 860px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -419,7 +438,7 @@ h2.light {
   font-size: clamp(1.2rem, 2.5vw, 1.55rem);
   color: rgba(255, 255, 255, 0.88);
   margin-bottom: 34px;
-  max-width: 720px;
+  max-width: 740px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -504,11 +523,11 @@ h2.light {
 }
 
 .secondary-btn:hover {
-  background: #25D366;
-  border-color: #25D366;
-  color: #FFFFFF;
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #101417;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 10px 30px rgba(212, 150, 10, 0.35);
 }
 
 .wa-icon-large {
@@ -1328,89 +1347,6 @@ h2.light {
   line-height: 1.6;
 }
 
-/* ===== SERVICES SECTION ===== */
-.services-section {
-  padding: 110px 0;
-  background: var(--green);
-  position: relative;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.service-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1.5px solid rgba(212, 150, 10, 0.3);
-  border-radius: 20px;
-  padding: 40px 32px;
-  backdrop-filter: blur(6px);
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border-color: var(--gold-light);
-}
-
-.service-icon {
-  font-size: 2.8rem;
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: #FFFFFF;
-}
-
-.service-desc {
-  font-size: 0.94rem;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.service-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.service-tag {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gold-light);
-  border: 1px solid rgba(212, 150, 10, 0.35);
-  padding: 5px 14px;
-  border-radius: 999px;
-  background: rgba(212, 150, 10, 0.08);
-}
-
-.service-cta {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 12px 28px;
-  background: var(--gold);
-  color: #101417;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-decoration: none;
-  border-radius: 999px;
-  text-align: center;
-  transition: background 0.25s, transform 0.2s;
-}
-
-.service-cta:hover {
-  background: var(--gold-light);
-  transform: translateY(-2px);
-}
-
 /* ===== PHOTO GALLERY SECTION ===== */
 .gallery-section {
   padding: 110px 0;
@@ -1880,6 +1816,52 @@ h2.light {
   color: var(--gold-light);
 }
 
+/* ===== DEVELOPER CALL TO ACTION SECTION ===== */
+.developer-cta-section {
+  padding: 90px 0;
+  background: var(--dark-bg);
+  position: relative;
+  border-top: 1px solid rgba(212, 150, 10, 0.2);
+}
+
+.dev-cta-card {
+  background: linear-gradient(135deg, rgba(27, 77, 46, 0.6) 0%, rgba(20, 24, 27, 0.95) 100%);
+  border: 1.5px solid var(--gold);
+  border-radius: 24px;
+  padding: 56px 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.dev-cta-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+
+.dev-cta-card h2 {
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 16px;
+}
+
+.dev-cta-desc {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 680px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.dev-cta-actions {
+  display: flex;
+  justify-content: center;
+}
+
 /* ===== FOOTER ===== */
 #footer {
   background: #0A0D0F;
@@ -1930,6 +1912,35 @@ h2.light {
   background: rgba(255, 255, 255, 0.08);
   max-width: 400px;
   margin: 0 auto 24px;
+}
+
+.developer-credit-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 150, 10, 0.25);
+  border-radius: 14px;
+  padding: 16px 24px;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.dev-title {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.dev-sub {
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.dev-tag {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .footer-copy {
@@ -2081,10 +2092,6 @@ h2.light {
     grid-template-columns: 1fr;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2096,6 +2103,10 @@ h2.light {
 
   .gr-right {
     align-items: flex-start;
+  }
+
+  .dev-cta-card {
+    padding: 36px 20px;
   }
 }
 
