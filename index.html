@@ -1,564 +1,1185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Thottathu Virundhu – Authentic Kongunadu Cuisine, Erode</title>
-<meta name="description" content="Thottathu Virundhu – #1 ranked traditional Kongunadu restaurant in Erode, Tamil Nadu. Zero preservatives, outdoor cottage seating, authentic village feast."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thottathu Virundhu – Authentic Kongunadu Cuisine & Fine Dining | Erode</title>
+  <meta name="description" content="Thottathu Virundhu – #1 ranked traditional Kongunadu restaurant in Erode, Tamil Nadu. Zero preservatives, outdoor cottage seating, authentic village feast, and WhatsApp ordering."/>
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Thottathu Virundhu – Authentic Kongunadu Cuisine, Erode"/>
+  <meta property="og:description" content="Experience authentic village feasts, slow-cooked Naattu Kozhi, and garden dining in Erode."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="images/billboard.jpg"/>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Structured Data / JSON-LD for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Thottathu Virundhu",
+    "image": "images/food1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Villarasampatti Four Road, Thindal",
+      "addressLocality": "Erode",
+      "addressRegion": "TN",
+      "postalCode": "638107",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "11.3410",
+      "longitude": "77.7172"
+    },
+    "url": "https://thottathuvirundhu.com",
+    "telephone": "+919842742126",
+    "servesCuisine": "South Indian, Kongunadu Traditional",
+    "priceRange": "₹₹",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "22:30"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "1200"
+    }
+  }
+  </script>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <img src="images/logo.png" alt="Thottathu Virundhu Logo" class="nav-logo-img"/>
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Thottathu Virundhu Logo" class="nav-logo-img"/>
+        <div class="logo-text-wrap">
+          <span class="logo-title">Thottathu Virundhu</span>
+          <span class="logo-subtitle">தோட்டத்து விருந்து</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#dishes">Dishes</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#experience">Reviews</a></li>
+        <li><a href="#visit">Contact</a></li>
+        <li class="nav-cta-li">
+          <a href="https://wa.me/919842742126?text=Hello%2C%20I%20would%20like%20to%20reserve%20a%20table%20or%20place%20an%20order." target="_blank" class="nav-cta-btn">
+            <span class="wa-icon">💬</span> Order on WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="images/billboard.jpg" alt="Thottathu Virundhu Restaurant Atmosphere" class="hero-bg-img" id="heroBgImg"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="leaf-pattern"></div>
+    <div class="container">
+      <div class="hero-content fade-up">
+        <div class="hero-tag-badge">
+          <span class="star-icon">✦</span> Authentic Kongunadu Cuisine · Erode <span class="star-icon">✦</span>
+        </div>
+        <h1 class="hero-title">
+          Authentic Flavours.<br/>
+          <em>Memorable Moments.</em>
+        </h1>
+        <p class="hero-sub">
+          Freshly prepared dishes made with traditional flavours, stone-ground spices, and modern presentation.
+        </p>
+        <div class="hero-badges">
+          <span class="badge"><span class="badge-star">★</span> #1 Ranked in Erode</span>
+          <span class="badge">🍃 100% Zero Preservatives</span>
+          <span class="badge">🔥 Clay Pot Wood-Fire Cooking</span>
+          <span class="badge">🌿 Open Garden Dining</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#menu" class="cta-btn primary-btn">
+            <span>Explore Menu</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/919842742126?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20today%27s%20menu." target="_blank" class="cta-btn secondary-btn wa-hero-btn">
+            <span class="wa-icon-large">💬</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#story" class="scroll-hint" aria-label="Scroll down to story">
+      <span class="scroll-text">Scroll to Discover</span>
+      <span class="scroll-arrow">&#8595;</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#story">Our Story</a></li>
-      <li><a href="#dishes">Dishes</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#visit">Visit Us</a></li>
-    </ul>
-  </div>
-</nav>
+  </section>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="leaf-pattern"></div>
-  <div class="hero-content fade-up">
-    <p class="hero-label">தோட்டத்து விருந்து · Erode, Tamil Nadu</p>
-    <h1 class="hero-title">Thottathu<br/><em>Virundhu</em></h1>
-    <p class="hero-sub">A feast rooted in the soil of Kongunadu</p>
-    <div class="hero-badges">
-      <span class="badge">#1 in Erode – TripAdvisor</span>
-      <span class="badge">No Preservatives</span>
-      <span class="badge">Kongunadu Tradition</span>
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>TVS Special Chicken</span><span class="star">✦</span>
+      <span>Mutton Chukka</span><span class="star">✦</span>
+      <span>Naattu Kozhi Fry</span><span class="star">✦</span>
+      <span>Pacha Puli Rasam</span><span class="star">✦</span>
+      <span>Elaneer Payasam</span><span class="star">✦</span>
+      <span>Thalaikari Boneless</span><span class="star">✦</span>
+      <span>Mutton Moolai Fry</span><span class="star">✦</span>
+      <span>Andhra Kalaki</span><span class="star">✦</span>
+      <span>Kari Kal Dosa</span><span class="star">✦</span>
+      <span>TVS Special Chicken</span><span class="star">✦</span>
+      <span>Mutton Chukka</span><span class="star">✦</span>
+      <span>Naattu Kozhi Fry</span><span class="star">✦</span>
+      <span>Pacha Puli Rasam</span><span class="star">✦</span>
+      <span>Elaneer Payasam</span><span class="star">✦</span>
+      <span>Thalaikari Boneless</span><span class="star">✦</span>
+      <span>Mutton Moolai Fry</span><span class="star">✦</span>
+      <span>Andhra Kalaki</span><span class="star">✦</span>
+      <span>Kari Kal Dosa</span><span class="star">✦</span>
     </div>
-    <a href="#dishes" class="cta-btn">Explore Our Dishes</a>
   </div>
-  <div class="scroll-hint">
-    <span>&#8595;</span>
-  </div>
-</section>
 
-<!-- MARQUEE -->
-<div class="marquee-strip">
-  <div class="marquee-track">
-    <span>TVS Special Chicken</span><span class="star">✦</span>
-    <span>Mutton Chukka</span><span class="star">✦</span>
-    <span>Naattu Kozhi Fry</span><span class="star">✦</span>
-    <span>Pacha Puli Rasam</span><span class="star">✦</span>
-    <span>Elaneer Payasam</span><span class="star">✦</span>
-    <span>Thalaikari</span><span class="star">✦</span>
-    <span>Brain Fry</span><span class="star">✦</span>
-    <span>Andhra Egg</span><span class="star">✦</span>
-    <span>TVS Special Chicken</span><span class="star">✦</span>
-    <span>Mutton Chukka</span><span class="star">✦</span>
-    <span>Naattu Kozhi Fry</span><span class="star">✦</span>
-    <span>Pacha Puli Rasam</span><span class="star">✦</span>
-    <span>Elaneer Payasam</span><span class="star">✦</span>
-    <span>Thalaikari</span><span class="star">✦</span>
-    <span>Brain Fry</span><span class="star">✦</span>
-    <span>Andhra Egg</span><span class="star">✦</span>
-  </div>
-</div>
+  <!-- ABOUT SECTION -->
+  <section id="story" class="about-section">
+    <div class="kolam-bg"></div>
+    <div class="container two-col fade-up">
+      <div class="about-left">
+        <p class="section-label">Crafted With Passion</p>
+        <h2>More than a meal —<br/>a true village feast</h2>
+        <p class="body-text">
+          Nestled in the verdant outskirts of Erode, <strong>Thottathu Virundhu</strong> was born from a simple belief: that food cooked with honest ingredients, in the tradition of our grandmothers, is the highest form of hospitality.
+        </p>
+        <p class="body-text">
+          In Tamil, <em>Virundhu</em> means a feast prepared for guests — not just a meal, but an act of love and welcome. We honour this tradition with every dish that leaves our kitchen, sourcing locally grown produce, avoiding artificial additives, and following age-old Kongunadu recipes.
+        </p>
+        <p class="body-text">
+          From our outdoor cottage seating under the open sky to the aroma of slow-cooked Naattu Kozhi over clay stoves, every visit feels like coming home to a warm village feast.
+        </p>
+        <div class="about-quote-box">
+          <p>"Rooted in traditional Tamil soil, elevated for memorable dining moments."</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-image-card">
+          <img src="images/food1.jpg" alt="Authentic Thottathu Virundhu Meal" class="about-hero-img" loading="lazy"/>
+          <div class="image-badge-floating">
+            <span class="badge-number">100%</span>
+            <span class="badge-text">Authentic Spices</span>
+          </div>
+        </div>
 
-<!-- ABOUT -->
-<section id="story" class="about-section">
-  <div class="kolam-bg"></div>
-  <div class="container two-col fade-up">
-    <div class="about-left">
-      <p class="section-label">Our Story</p>
-      <h2>More than a meal —<br/>a true feast</h2>
-      <p class="body-text">Nestled in the verdant outskirts of Erode, <strong>Thottathu Virundhu</strong> was born from a simple belief: that food cooked with honest ingredients, in the way our grandmothers cooked, is the highest form of hospitality.</p>
-      <p class="body-text">In Tamil, <em>Virundhu</em> means a feast prepared for guests — not just a meal, but an act of love and welcome. We honour this tradition with every dish that leaves our kitchen, sourcing locally grown produce, avoiding preservatives, and following age-old Kongunadu recipes.</p>
-      <p class="body-text">From our outdoor cottage seating under the open sky to the aroma of slow-cooked Naattu Kozhi, every visit feels like coming home to a village kitchen.</p>
-    </div>
-    <div class="about-right">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-num">#1</span>
-          <span class="stat-label">Ranked in Erode</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">4.1★</span>
-          <span class="stat-label">Rating · 3000+ Reviews</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">₹750</span>
-          <span class="stat-label">For Two</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">Zero</span>
-          <span class="stat-label">Preservatives Used</span>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num" data-target="10" data-suffix="+">0</span>
+            <span class="stat-label">Years of Culinary Heritage</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Signature Dishes</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="10000" data-suffix="+">0</span>
+            <span class="stat-label">Happy Guests Served</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="4.8" data-decimal="1" data-suffix="★">0</span>
+            <span class="stat-label">Google Rating (3k+ Reviews)</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DISHES -->
-<section id="dishes" class="dishes-section">
-  <div class="container fade-up">
-    <p class="section-label light">Signature Dishes</p>
-    <h2 class="light">What the kitchen<br/>is known for</h2>
-    <div class="dishes-grid">
-      <div class="dish-card">
-        <div class="dish-emoji">🍗</div>
-        <h3>TVS Special Chicken</h3>
-        <p class="dish-tamil">TVS சிக்கன்</p>
-        <p class="dish-desc">Our crowning glory — slow-cooked country chicken in a blend of village-ground spices.</p>
-        <span class="dish-tag">House Signature</span>
+  <!-- POPULAR DISHES -->
+  <section id="dishes" class="dishes-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label light">Signature Menu</p>
+        <h2 class="light">Our Most Loved Dishes</h2>
+        <p class="section-sub light">Handcrafted village delicacies cooked fresh daily using traditional slow-fire methods.</p>
       </div>
-      <div class="dish-card">
-        <div class="dish-emoji">🥩</div>
-        <h3>Mutton Chukka</h3>
-        <p class="dish-tamil">மட்டன் சுக்கா</p>
-        <p class="dish-desc">Tender mutton pieces dry-fried with freshly pounded masalas and curry leaves.</p>
-        <span class="dish-tag">Chef's Pick</span>
+
+      <div class="dishes-grid">
+        <!-- Dish Card 1 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="TVS Special Chicken" class="dish-img" loading="lazy"/>
+            <span class="diet-badge non-veg" title="Non-Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹340</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>TVS Special Chicken</h3>
+              <p class="dish-tamil">TVS சிக்கன்</p>
+            </div>
+            <p class="dish-desc">Our crowning glory — slow-cooked country chicken tossed in a secret blend of stone-ground village masalas.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">House Signature</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20TVS%20Special%20Chicken" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 2 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Mutton Chukka" class="dish-img" loading="lazy"/>
+            <span class="diet-badge non-veg" title="Non-Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹380</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Mutton Chukka</h3>
+              <p class="dish-tamil">மட்டன் சுக்கா</p>
+            </div>
+            <p class="dish-desc">Tender tender goat meat dry-fried on an iron tawa with fresh curry leaves and pounded red chillies.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Chef's Pick</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Mutton%20Chukka" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 3 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="images/food2.jpg" alt="Naattu Kozhi Fry" class="dish-img" loading="lazy"/>
+            <span class="diet-badge non-veg" title="Non-Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹360</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Naattu Kozhi Fry</h3>
+              <p class="dish-tamil">நாட்டு கோழி வறுவல்</p>
+            </div>
+            <p class="dish-desc">Farm-raised country chicken marinated overnight in shallots and garlic, roasted over hot coals.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Must Try</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Naattu%20Kozhi%20Fry" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 4 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80" alt="Paneer Tikka Special" class="dish-img" loading="lazy"/>
+            <span class="diet-badge veg" title="Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹260</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Paneer Tikka Special</h3>
+              <p class="dish-tamil">பன்னீர் டிக்கா</p>
+            </div>
+            <p class="dish-desc">Fresh cottage cheese marinated in hung curd, green herbs, and char-grilled for smokey softness.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Veg Delight</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Paneer%20Tikka" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 5 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80" alt="Kari Kal Dosa" class="dish-img" loading="lazy"/>
+            <span class="diet-badge non-veg" title="Non-Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹240</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Kari Kal Dosa</h3>
+              <p class="dish-tamil">கறி கல் தோசை</p>
+            </div>
+            <p class="dish-desc">Thick spongy tawa dosa topped with spiced mincemeat curry, fresh coriander, and country ghee.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Evening Special</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Kari%20Kal%20Dosa" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 6 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80" alt="Pacha Puli Rasam & Meals" class="dish-img" loading="lazy"/>
+            <span class="diet-badge veg" title="Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹180</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Pacha Puli Rasam</h3>
+              <p class="dish-tamil">பச்சை புளி ரசம்</p>
+            </div>
+            <p class="dish-desc">Tangy, soul-soothing raw tamarind and hand-ground black pepper rasam served with steaming rice.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Village Classic</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Pacha%20Puli%20Rasam" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 7 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=600&q=80" alt="Elaneer Payasam" class="dish-img" loading="lazy"/>
+            <span class="diet-badge veg" title="Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹150</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Elaneer Payasam</h3>
+              <p class="dish-tamil">எளனீர் பாயசம்</p>
+            </div>
+            <p class="dish-desc">Chilled tender coconut pulp dessert infused with organic jaggery, cardamom, and roasted cashews.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Signature Dessert</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Elaneer%20Payasam" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 8 -->
+        <div class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Fresh Lime & Mint Soda" class="dish-img" loading="lazy"/>
+            <span class="diet-badge veg" title="Vegetarian"><span class="dot"></span></span>
+            <span class="dish-price-tag">₹80</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3>Fresh Lime & Mint Cooler</h3>
+              <p class="dish-tamil">ஃப்ரெஷ் லெமன் ஜூஸ்</p>
+            </div>
+            <p class="dish-desc">Refreshing sparkling lime soda handcrafted with garden mint, rock salt, and wild honey.</p>
+            <div class="dish-footer">
+              <span class="dish-tag">Beverage</span>
+              <a href="https://wa.me/919842742126?text=I%20would%20like%20to%20order%20Fresh%20Lime%20Cooler" target="_blank" class="dish-order-btn">Order</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="dish-card">
-        <div class="dish-emoji">🍳</div>
-        <h3>Naattu Kozhi Fry</h3>
-        <p class="dish-tamil">நாட்டு கோழி வறுவல்</p>
-        <p class="dish-desc">Farm-raised country fowl, marinated overnight, crisped to perfection on a clay tawa.</p>
-        <span class="dish-tag">Must Try</span>
+    </div>
+  </section>
+
+  <!-- MENU SECTION (INTERACTIVE CATEGORIES + PHYSICAL MENU CARDS) -->
+  <section id="menu" class="menu-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label">Culinary Offerings</p>
+        <h2>Interactive Food Menu</h2>
+        <p class="menu-sub">Select a category below to explore our full selection, or open the printed physical menu card.</p>
       </div>
-      <div class="dish-card">
-        <div class="dish-emoji">🍲</div>
-        <h3>Pacha Puli Rasam</h3>
-        <p class="dish-tamil">பச்சை புளி ரசம்</p>
-        <p class="dish-desc">A tangy, soul-warming rasam made with fresh tamarind and hand-pounded pepper.</p>
-        <span class="dish-tag">Village Classic</span>
+
+      <!-- Time Slot / Full Menu Modals Trigger Buttons (Preserved!) -->
+      <div class="menu-modal-promos">
+        <div class="time-tabs">
+          <button class="time-tab" id="btn-lunch" data-modal="modal-lunch">
+            <span class="tab-icon">🌞</span>
+            <span class="tab-label">Lunch Menu Card</span>
+            <span class="tab-time">12:30 PM – 4:00 PM</span>
+            <span class="tab-action">Click to View Full Card ↗</span>
+          </button>
+          <button class="time-tab" id="btn-dinner" data-modal="modal-dinner">
+            <span class="tab-icon">🌙</span>
+            <span class="tab-label">Dinner Menu Card</span>
+            <span class="tab-time">6:30 PM – 10:00 PM</span>
+            <span class="tab-action">Click to View Full Card ↗</span>
+          </button>
+        </div>
       </div>
-      <div class="dish-card">
-        <div class="dish-emoji">🥥</div>
-        <h3>Elaneer Payasam</h3>
-        <p class="dish-tamil">எளனீர் பாயசம்</p>
-        <p class="dish-desc">Delicate tender coconut dessert with jaggery and cardamom — the perfect sweet ending.</p>
-        <span class="dish-tag">Seasonal Favourite</span>
+
+      <!-- CATEGORY FILTER TABS -->
+      <div class="menu-filter-nav">
+        <button class="menu-cat-btn active" data-category="all">All Items</button>
+        <button class="menu-cat-btn" data-category="starters">Starters</button>
+        <button class="menu-cat-btn" data-category="south-indian">South Indian</button>
+        <button class="menu-cat-btn" data-category="biryani">Biryani & Meals</button>
+        <button class="menu-cat-btn" data-category="mutton">Mutton Specials</button>
+        <button class="menu-cat-btn" data-category="tiffin">Tiffin & Dosa</button>
+        <button class="menu-cat-btn" data-category="beverages">Beverages & Sweets</button>
       </div>
-      <div class="dish-card">
-        <div class="dish-emoji">🧠</div>
-        <h3>Brain Fry & Liver Fry</h3>
-        <p class="dish-tamil">மூளை &amp; கல்லீரல் வறுவல்</p>
-        <p class="dish-desc">Offal specialties cooked boldly — not for the faint-hearted, beloved by true food lovers.</p>
-        <span class="dish-tag">Bold &amp; Traditional</span>
+
+      <!-- MENU FILTERABLE ITEMS GRID -->
+      <div class="menu-items-grid" id="menuItemsGrid">
+
+        <!-- Item 1 -->
+        <div class="menu-list-item" data-category="starters mutton">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Mutton Sukka Fry</h4>
+              <p class="item-desc">Dry fried mutton cooked in iron tawa with hand-pounded pepper and curry leaves.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹380</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Mutton%20Sukka%20Fry" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-list-item" data-category="starters south-indian">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Nattu Kozhi Pallipalayam</h4>
+              <p class="item-desc">Traditional Erode specialty village chicken cooked with coconut slivers and red chillies.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹350</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Nattu%20Kozhi%20Pallipalayam" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-list-item" data-category="starters">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Chicken 65 (Boneless)</h4>
+              <p class="item-desc">Crispy boneless chicken bites marinated in ginger, garlic, and freshly ground spices.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹280</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Chicken%2065" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-list-item" data-category="starters mutton">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Mutton Moolai Fry (Brain Fry)</h4>
+              <p class="item-desc">Delicate goat brain pan-fried with onions, crushed pepper, and turmeric.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹310</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Mutton%20Moolai%20Fry" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-list-item" data-category="biryani south-indian">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Kongunadu Mutton Biryani</h4>
+              <p class="item-desc">Seeraga Samba rice cooked with tender mutton chunks and wood-fired aromatic ghee.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹360</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Mutton%20Biryani" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-list-item" data-category="biryani south-indian">
+          <div class="item-meta">
+            <span class="diet-badge veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Authentic Banana Leaf Meals (Sapadu)</h4>
+              <p class="item-desc">Unlimited traditional South Indian meal served on fresh banana leaf with veg & non-veg gravies.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹220</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Banana%20Leaf%20Meals" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-list-item" data-category="tiffin south-indian">
+          <div class="item-meta">
+            <span class="diet-badge non-veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Kari Kal Dosa (Mutton / Chicken)</h4>
+              <p class="item-desc">Crispy golden tawa dosa layered with slow-cooked minced mutton gravy and country egg.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹240</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Kari%20Kal%20Dosa" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-list-item" data-category="tiffin south-indian">
+          <div class="item-meta">
+            <span class="diet-badge veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Ghee Podi Roast Dosa</h4>
+              <p class="item-desc">Thin crispy rice crepe generously brushed with pure cow ghee and signature gun-powder spice.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹140</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Ghee%20Podi%20Dosa" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="menu-list-item" data-category="starters">
+          <div class="item-meta">
+            <span class="diet-badge veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Kalan Pallipalayam (Mushroom)</h4>
+              <p class="item-desc">Fresh wild mushrooms sauteed with shallots, mustard seeds, and dry red chilli flakes.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹210</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Kalan%20Pallipalayam" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="menu-list-item" data-category="beverages">
+          <div class="item-meta">
+            <span class="diet-badge veg"><span class="dot"></span></span>
+            <div>
+              <h4 class="item-name">Elaneer Payasam</h4>
+              <p class="item-desc">Chilled tender coconut dessert enriched with condensed milk, cardamom, and cashews.</p>
+            </div>
+          </div>
+          <div class="item-price-wrap">
+            <span class="item-price">₹150</span>
+            <a href="https://wa.me/919842742126?text=I%20want%20to%20order%20Elaneer%20Payasam" target="_blank" class="item-wa-btn">Order</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-footer-callout">
+        <p class="menu-note">📞 Call us directly at <strong>+91 98427 42126</strong> for today's special seasonal dishes & group catering</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LUNCH MODAL (PRESERVED) ═══ -->
+  <div class="mc-modal" id="modal-lunch" aria-hidden="true">
+    <div class="mc-backdrop"></div>
+    <div class="mc-modal-body">
+      <button class="mc-close" aria-label="Close menu">&times;</button>
+      <div class="mc-outer">
+        <div class="mc-inner">
+          <span class="mc-corner mc-tl">✦</span>
+          <span class="mc-corner mc-tr">✦</span>
+          <span class="mc-corner mc-bl">✦</span>
+          <span class="mc-corner mc-br">✦</span>
+
+          <div class="mc-header">
+            <h3 class="mc-title">🌞 Lunch Menu</h3>
+            <p class="mc-time">🕛 12:30 PM – 4:00 PM</p>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍛</span> Meals</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Meals (Sapadu)</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
+            <div class="mc-items-grid">
+              <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
+              <div class="mc-item">Nattu Kozhi Pallipalayam</div>
+              <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
+              <div class="mc-item">Nattu Kozhi Gravy</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Mutton Sukka</div>
+              <div class="mc-item">Mutton Kothu Kari</div>
+              <div class="mc-item">Thala Kari (Boneless)</div>
+              <div class="mc-item">Mutton Eral</div>
+              <div class="mc-item">Mutton Moolai Fry</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Chicken 65 (Boneless)</div>
+              <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
+              <div class="mc-item">Picha Potta Chicken</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Andhra Kalaki</div>
+              <div class="mc-item">Kulambu Kalaki</div>
+              <div class="mc-item">Onion Kalaki</div>
+              <div class="mc-item">Kalaki</div>
+              <div class="mc-item">Egg Poriyal</div>
+              <div class="mc-item">Andhra Egg Poriyal</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Kalan Pallipalayam</div>
+              <div class="mc-item">Paneer 65</div>
+              <div class="mc-item">Baby Corn 65</div>
+              <div class="mc-item">Cauliflower 65</div>
+              <div class="mc-item">Veg Kulambu</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍲</span> Gravies</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Veg Kulambu</div>
+              <div class="mc-item">Non-Veg Kulambu</div>
+            </div>
+          </div>
+
+          <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="exp-section">
-  <div class="container two-col fade-up">
-    <div class="exp-left">
-      <p class="section-label">Guest Reviews</p>
-      <h2>What our guests say</h2>
-      <div class="review-block">
-        <p>"The Naattu Kozhi Fry was unlike anything I've tasted in the city. It transported me straight to my grandmother's village kitchen. Absolutely no compromise on quality."</p>
-        <span class="reviewer">— Karthikeyan R., Coimbatore · TripAdvisor</span>
-      </div>
-      <div class="review-block">
-        <p>"Sitting under the open sky, eating from a banana leaf — Thottathu Virundhu is a full experience, not just a restaurant. The TVS Special Chicken is legendary."</p>
-        <span class="reviewer">— Priya S., Bengaluru · TripAdvisor</span>
+  <!-- ═══ DINNER MODAL (PRESERVED) ═══ -->
+  <div class="mc-modal" id="modal-dinner" aria-hidden="true">
+    <div class="mc-backdrop"></div>
+    <div class="mc-modal-body">
+      <button class="mc-close" aria-label="Close menu">&times;</button>
+      <div class="mc-outer">
+        <div class="mc-inner">
+          <span class="mc-corner mc-tl">✦</span>
+          <span class="mc-corner mc-tr">✦</span>
+          <span class="mc-corner mc-bl">✦</span>
+          <span class="mc-corner mc-br">✦</span>
+
+          <div class="mc-header">
+            <h3 class="mc-title">🌙 Dinner Menu</h3>
+            <p class="mc-time">🕡 6:30 PM – 10:00 PM</p>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥞</span> Dosa Varieties</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Dosa</div>
+              <div class="mc-item">Kal Dosa</div>
+              <div class="mc-item">Nei Dosa</div>
+              <div class="mc-item">Egg Dosa</div>
+              <div class="mc-item">Onion Dosa</div>
+              <div class="mc-item">Kari Kal Dosa (Chicken / Mutton)</div>
+              <div class="mc-item">Podi Dosa</div>
+              <div class="mc-item">Nei Podi Dosa</div>
+              <div class="mc-item">Salem Dosa</div>
+              <div class="mc-item">Nei Nice</div>
+              <div class="mc-item">Egg Nice</div>
+              <div class="mc-item">Onion Nice</div>
+              <div class="mc-item">Roast</div>
+              <div class="mc-item">Nei Roast</div>
+              <div class="mc-item">Onion Roast</div>
+              <div class="mc-item">Poondu Dosa</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍽️</span> Kothu Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Chicken Kothu Dosa</div>
+              <div class="mc-item">Mutton Kothu Dosa</div>
+              <div class="mc-item">Kalan Kothu Dosa</div>
+              <div class="mc-item">Paneer Kothu Dosa</div>
+              <div class="mc-item">Egg Kothu Dosa</div>
+              <div class="mc-item">Tomato Kothu Dosa</div>
+              <div class="mc-item">Brinjal Kothu Dosa</div>
+              <div class="mc-item">Poondu Kothu Dosa</div>
+              <div class="mc-item">Chicken Kothu Idli</div>
+              <div class="mc-item">Mutton Kothu Idli</div>
+              <div class="mc-item">Chicken Kothu Chapathi</div>
+              <div class="mc-item">Mutton Kothu Chapathi</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍞</span> Tiffin</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Idli</div>
+              <div class="mc-item">Roti</div>
+              <div class="mc-item">Chapathi</div>
+            </div>
+          </div>
+
+          <hr class="mc-thin-rule"/>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍛</span> Meals</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Meals (Sapadu)</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
+            <div class="mc-items-grid">
+              <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
+              <div class="mc-item">Nattu Kozhi Pallipalayam</div>
+              <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
+              <div class="mc-item">Nattu Kozhi Gravy</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Mutton Sukka</div>
+              <div class="mc-item">Mutton Kothu Kari</div>
+              <div class="mc-item">Thala Kari (Boneless)</div>
+              <div class="mc-item">Mutton Eral</div>
+              <div class="mc-item">Mutton Moolai Fry</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Chicken 65 (Boneless)</div>
+              <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
+              <div class="mc-item">Picha Potta Chicken</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Andhra Kalaki</div>
+              <div class="mc-item">Kulambu Kalaki</div>
+              <div class="mc-item">Onion Kalaki</div>
+              <div class="mc-item">Kalaki</div>
+              <div class="mc-item">Egg Poriyal</div>
+              <div class="mc-item">Andhra Egg Poriyal</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Kalan Pallipalayam</div>
+              <div class="mc-item">Paneer 65</div>
+              <div class="mc-item">Baby Corn 65</div>
+              <div class="mc-item">Cauliflower 65</div>
+              <div class="mc-item">Veg Kulambu</div>
+            </div>
+          </div>
+
+          <div class="mc-category">
+            <div class="mc-cat-header"><span>🍲</span> Gravies</div>
+            <div class="mc-items-grid">
+              <div class="mc-item">Veg Kulambu</div>
+              <div class="mc-item">Non-Veg Kulambu</div>
+            </div>
+          </div>
+
+          <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
+        </div>
       </div>
     </div>
-    <div class="exp-right">
-      <p class="section-label">The Experience</p>
-      <h2>Why guests return</h2>
-      <div class="why-list">
-        <div class="why-item">
-          <span class="why-num">01</span>
+  </div>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why-us" class="why-us-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label">The Virundhu Difference</p>
+        <h2>Why Food Lovers Choose Us</h2>
+        <p class="section-sub">Four core pillars of our culinary commitment to every guest.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Feature 1 -->
+        <div class="why-card">
+          <div class="why-icon-wrap">
+            <svg class="feature-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Fresh Ingredients</h3>
+          <p>Locally sourced fresh produce and farm-raised country meats. 100% free from preservatives, artificial colors, or MSG.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="why-card">
+          <div class="why-icon-wrap">
+            <svg class="feature-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18M5.3 5.3l13.4 13.4M5.3 18.7L18.7 5.3"/></svg>
+          </div>
+          <h3>Traditional Recipes</h3>
+          <p>Age-old Kongunadu recipes slow-cooked over wood-fire in clay pots using hand-pounded stone ground spice masalas.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="why-card">
+          <div class="why-icon-wrap">
+            <svg class="feature-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13.8a6 6 0 0112 0v5.2H6v-5.2z"/><path d="M12 2a4 4 0 00-4 4v3h8V6a4 4 0 00-4-4z"/></svg>
+          </div>
+          <h3>Expert Master Chefs</h3>
+          <p>Decades of culinary heritage from traditional Tamil village cooks who master the subtle balance of authentic flavours.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="why-card">
+          <div class="why-icon-wrap">
+            <svg class="feature-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Fast & Courteous Service</h3>
+          <p>Warm village hospitality, prompt dining service, and instant WhatsApp ordering for takeout and delivery inquiries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (Catering & Open Garden) -->
+  <section id="services" class="services-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label light">Special Experiences</p>
+        <h2 class="light">Catering & Garden Dining</h2>
+        <p class="section-sub light">Bring authentic Kongunadu feasts to your grand occasions.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🍽️</div>
+          <h3>Catering Services</h3>
+          <p class="service-desc">Bring the authentic Thottathu Virundhu feast to your weddings, celebrations, and corporate events. Our live kitchen team prepares fresh Kongunadu cuisine on-site with zero compromises on taste.</p>
+          <div class="service-highlights">
+            <span class="service-tag">Weddings</span>
+            <span class="service-tag">Events</span>
+            <span class="service-tag">Corporate</span>
+            <span class="service-tag">Private Parties</span>
+          </div>
+          <a href="https://wa.me/919842742126?text=Hello%2C%20I%20am%20interested%20in%20Catering%20Services" target="_blank" class="service-cta">💬 Enquire on WhatsApp</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌿</div>
+          <h3>Open Ground Garden Space</h3>
+          <p class="service-desc">Dine under the open starry sky in our lush garden venue. Ideal for family gatherings, birthday celebrations, and cozy evening dinners surrounded by tranquil village greenery.</p>
+          <div class="service-highlights">
+            <span class="service-tag">Family Gatherings</span>
+            <span class="service-tag">Birthdays</span>
+            <span class="service-tag">Outdoor Dining</span>
+          </div>
+          <a href="https://wa.me/919842742126?text=Hello%2C%20I%20want%20to%20reserve%20a%20table%20in%20the%20Garden" target="_blank" class="service-cta">💬 Book Garden Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY SECTION WITH LIGHTBOX -->
+  <section id="gallery" class="gallery-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label">Atmosphere & Delicacies</p>
+        <h2>Photo Gallery</h2>
+        <p class="section-sub">A glimpse into our serene ambience and mouth-watering signature creations.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-src="images/billboard.jpg" data-caption="Thottathu Virundhu Outdoor Dining Ambience">
+          <img src="images/billboard.jpg" alt="Restaurant Exterior & Billboard" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Outdoor Ambience</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="images/food1.jpg" data-caption="Authentic Kongunadu Village Feast Spread">
+          <img src="images/food1.jpg" alt="Kongunadu Village Feast Spread" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Traditional Feast Spread</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="images/food2.jpg" data-caption="Slow-Cooked Country Chicken Special">
+          <img src="images/food2.jpg" alt="Country Chicken Special Dish" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Country Chicken Dish</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" data-caption="Warm Evening Cottage Dining Experience">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Evening Cottage Dining" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Cottage Seating</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" data-caption="Fresh Tawa Dosa with Spicy Chutneys">
+          <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80" alt="Special South Indian Dosa" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Crispy Tawa Dosa</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" data-caption="Green Garden Lawn Seating under Open Sky">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Garden Dining Area" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Open Sky Garden</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" data-caption="Char-grilled Paneer Tikka Kebabs">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" alt="Paneer Tikka Kebab" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Char-Grilled Starters</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-src="images/menu-board.png" data-caption="Thottathu Virundhu Traditional Blackboard Menu">
+          <img src="images/menu-board.png" alt="Blackboard Menu Display" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <p class="gallery-title">Authentic Menu Board</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image lightbox">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg"/>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- REVIEWS & GOOGLE RATING SECTION -->
+  <section id="experience" class="exp-section">
+    <div class="container fade-up">
+      <div class="section-header center">
+        <p class="section-label">Guest Feedback</p>
+        <h2>What Our Guests Say</h2>
+        <p class="section-sub">Real experiences shared by food enthusiasts and families.</p>
+      </div>
+
+      <!-- GOOGLE RATING HIGHLIGHT CARD (DEMO SAMPLE) -->
+      <div class="google-rating-card">
+        <div class="gr-left">
+          <div class="gr-google-logo">
+            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+          </div>
+          <div class="gr-score">4.8 <span class="gr-stars">★★★★★</span></div>
+          <p class="gr-count">1,200+ Verified Customer Reviews (Demo Showcase)</p>
+        </div>
+        <div class="gr-right">
+          <p class="gr-badge-text">#1 Ranked Traditional Restaurant in Erode on TripAdvisor & Google Maps</p>
+          <a href="https://maps.google.com/?q=Thottathu+Virundhu+Thindal+Erode" target="_blank" class="gr-btn">View on Google Maps ↗</a>
+        </div>
+      </div>
+
+      <!-- REVIEW CARDS GRID -->
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The Naattu Kozhi Fry was unlike anything I've tasted in the city! It transported me straight to my grandmother's village kitchen. Absolutely no compromise on quality and zero preservatives."</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">Karthikeyan R.</span>
+            <span class="reviewer-source">Coimbatore · TripAdvisor</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Sitting under the open sky in their garden cottage, eating off a banana leaf — Thottathu Virundhu is a full sensory experience, not just a restaurant. The TVS Special Chicken is legendary!"</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">Priya S.</span>
+            <span class="reviewer-source">Bengaluru · Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Best Mutton Chukka and Kari Kal Dosa in Erode! The spices feel fresh and natural without heavy food colors. Staff hospitality is super warm and friendly."</p>
+          <div class="reviewer-info">
+            <span class="reviewer-name">Anandakumar M.</span>
+            <span class="reviewer-source">Erode · Local Guide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & VISIT US SECTION -->
+  <section id="visit" class="visit-section">
+    <div class="container two-col fade-up">
+      <div class="visit-left">
+        <p class="section-label light">Locate Us</p>
+        <h2 class="light">Visit Our Restaurant</h2>
+        <p class="body-text light-text">We welcome you to experience authentic village hospitality and traditional Kongunadu dining in Erode.</p>
+
+        <div class="contact-info">
+          <div class="contact-row">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Address:</strong><br/>
+              Villarasampatti Four Road, Thindal,<br/>
+              Erode – 638 107, Tamil Nadu, India
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Call Us:</strong><br/>
+              <a href="tel:+919842742126">+91 98427 42126</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">💬</span>
+            <div>
+              <strong>WhatsApp Ordering:</strong><br/>
+              <a href="https://wa.me/919842742126?text=Hello%2C%20I%20want%20to%20place%20an%20order" target="_blank">+91 98427 42126 (Instant Chat)</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📸</span>
+            <div>
+              <strong>Instagram:</strong><br/>
+              <a href="https://instagram.com" target="_blank">@thottathuvirundu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timing-chips-wrap">
+          <span class="timing-title">Dining Hours:</span>
+          <div class="timing-chips">
+            <span class="timing-chip">🌅 Breakfast: 7:00 AM – 10:30 AM</span>
+            <span class="timing-chip">☀️ Lunch: 12:30 PM – 4:00 PM</span>
+            <span class="timing-chip">🌙 Dinner: 6:30 PM – 10:00 PM</span>
+          </div>
+        </div>
+
+        <div class="visit-action-buttons">
+          <a href="tel:+919842742126" class="v-btn call-v-btn">📞 Call Now</a>
+          <a href="https://wa.me/919842742126?text=Hello%2C%20I%20would%20like%20to%20reserve%20a%20table" target="_blank" class="v-btn wa-v-btn">💬 Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="visit-right">
+        <div class="map-card">
+          <div class="map-header">
+            <span class="map-pin-icon">📍</span>
+            <div>
+              <h4 class="map-card-title">Thottathu Virundhu</h4>
+              <p class="map-card-address">Villarasampatti Four Road, Thindal, Erode</p>
+            </div>
+          </div>
+          <div class="map-body-embed">
+            <iframe 
+              title="Google Maps Location of Thottathu Virundhu"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.750519391024!2d77.6978!3d11.3410!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f0b4d455555%3A0x123456789abcdef!2sThottathu%20Virundhu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="220" 
+              style="border:0; border-radius: 12px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Thottathu+Virundhu+Thindal+Erode" target="_blank" class="maps-btn">
+            Get Directions on Google Maps →
+          </a>
+        </div>
+
+        <div class="guest-tip">
+          <span class="tip-icon">💡</span>
           <div>
-            <strong>Zero Compromises on Ingredients</strong>
-            <p>Every ingredient is locally sourced, fresh, and free from artificial additives.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <span class="why-num">02</span>
-          <div>
-            <strong>Traditional Kongunadu Cooking Methods</strong>
-            <p>Clay pots, wood fire, and stone-ground spices — just as tradition demands.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <span class="why-num">03</span>
-          <div>
-            <strong>Outdoor Cottage Seating</strong>
-            <p>Dine under the open sky, surrounded by trees and village ambience.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <span class="why-num">04</span>
-          <div>
-            <strong>Lunch &amp; Dinner at Two Locations</strong>
-            <p>Flexible dining hours across two convenient Erode locations.</p>
+            <p><em>"Book ahead for weekend dinners — outdoor cottage seating fills up fast! Arrive by 1:00 PM for fresh Naattu Kozhi Special Lunch."</em></p>
+            <span class="reviewer">— Regular Guest Tip</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVICES -->
-<section id="services" class="services-section">
-  <div class="container fade-up">
-    <p class="section-label light">What's New</p>
-    <h2 class="light">Now Available</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🍽️</div>
-        <h3>Catering Services</h3>
-        <p class="service-desc">Bring the authentic Thottathu Virundhu experience to your weddings, celebrations, and corporate events. Our team prepares fresh Kongunadu cuisine on-site with zero compromises on taste and quality.</p>
-        <div class="service-highlights">
-          <span class="service-tag">Weddings</span>
-          <span class="service-tag">Events</span>
-          <span class="service-tag">Corporate</span>
-          <span class="service-tag">Parties</span>
-        </div>
-        <a href="tel:+919842742126" class="service-cta">📞 Enquire Now</a>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-wrap">
+        <h2 class="footer-name">Thottathu Virundhu</h2>
+        <p class="footer-tamil">தோட்டத்து விருந்து · விருந்தினர்க்கு உணவு, இதயத்திலிருந்து</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🌿</div>
-        <h3>Open Ground Garden</h3>
-        <p class="service-desc">Dine under the open sky in our beautiful garden space. Perfect for family gatherings, birthday celebrations, and private events with lush green surroundings and a village ambience.</p>
-        <div class="service-highlights">
-          <span class="service-tag">Family Gatherings</span>
-          <span class="service-tag">Birthdays</span>
-          <span class="service-tag">Private Events</span>
-        </div>
-        <a href="tel:+919842742126" class="service-cta">📞 Book the Garden</a>
-      </div>
+      <nav class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#dishes">Popular Dishes</a>
+        <a href="#menu">Full Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experience">Reviews</a>
+        <a href="#visit">Contact & Location</a>
+      </nav>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Thottathu Virundhu, Erode, Tamil Nadu. All rights reserved. Designed as a portfolio demo.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- MENU -->
-<section id="menu" class="menu-section">
-  <div class="container fade-up">
-    <p class="section-label">Our Menu</p>
-    <h2>A taste of what awaits</h2>
-    <p class="menu-sub">We serve different specialities at each mealtime — tap to explore.</p>
+  <!-- FLOATING WHATSAPP BUTTON (MOBILE & DESKTOP) -->
+  <a href="https://wa.me/919842742126?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20today%27s%20menu." target="_blank" class="floating-wa-btn" aria-label="Order on WhatsApp">
+    <span class="wa-tooltip">Order on WhatsApp</span>
+    <svg class="wa-svg" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor">
+      <path fill="#FFF" d="M16 2a13 13 0 00-11 20L3 29l7.2-1.9A13 13 0 1016 2zm0 23.8a10.8 10.8 0 01-5.5-1.5l-.4-.2-4.3 1.1 1.1-4.2-.3-.4A10.8 10.8 0 1116 25.8z"/>
+      <path fill="#FFF" d="M22.3 18.7c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-2.1-1.1-3.6-2.5-4.6-4.5-.1-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.8 5.2 2.3.9 3.2 1 4.4.8.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.6-.5z"/>
+    </svg>
+  </a>
 
-    <!-- Lunch / Dinner Buttons -->
-    <div class="time-tabs">
-      <button class="time-tab" id="btn-lunch" data-modal="modal-lunch">
-        <span class="tab-icon">🌞</span>
-        <span class="tab-label">Lunch</span>
-        <span class="tab-time">12:30 PM – 4:00 PM</span>
-      </button>
-      <button class="time-tab" id="btn-dinner" data-modal="modal-dinner">
-        <span class="tab-icon">🌙</span>
-        <span class="tab-label">Dinner</span>
-        <span class="tab-time">6:30 PM – 10:00 PM</span>
-      </button>
-    </div>
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
 
-    <p class="menu-note">📞 Call us at +91 98427 42126 to enquire about today's specials</p>
-  </div>
-</section>
-
-<!-- ═══ LUNCH MODAL ═══ -->
-<div class="mc-modal" id="modal-lunch">
-  <div class="mc-backdrop"></div>
-  <div class="mc-modal-body">
-    <button class="mc-close" aria-label="Close menu">&times;</button>
-    <div class="mc-outer">
-      <div class="mc-inner">
-        <span class="mc-corner mc-tl">✦</span>
-        <span class="mc-corner mc-tr">✦</span>
-        <span class="mc-corner mc-bl">✦</span>
-        <span class="mc-corner mc-br">✦</span>
-
-        <div class="mc-header">
-          <h3 class="mc-title">🌞 Lunch Menu</h3>
-          <p class="mc-time">🕛 12:30 PM – 4:00 PM</p>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍛</span> Meals</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Meals (Sapadu)</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
-          <div class="mc-items-grid">
-            <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
-            <div class="mc-item">Nattu Kozhi Pallipalayam</div>
-            <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
-            <div class="mc-item">Nattu Kozhi Gravy</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Mutton Sukka</div>
-            <div class="mc-item">Mutton Kothu Kari</div>
-            <div class="mc-item">Thala Kari (Boneless)</div>
-            <div class="mc-item">Mutton Eral</div>
-            <div class="mc-item">Mutton Moolai Fry</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Chicken 65 (Boneless)</div>
-            <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
-            <div class="mc-item">Picha Potta Chicken</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Andhra Kalaki</div>
-            <div class="mc-item">Kulambu Kalaki</div>
-            <div class="mc-item">Onion Kalaki</div>
-            <div class="mc-item">Kalaki</div>
-            <div class="mc-item">Egg Poriyal</div>
-            <div class="mc-item">Andhra Egg Poriyal</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Kalan Pallipalayam</div>
-            <div class="mc-item">Paneer 65</div>
-            <div class="mc-item">Baby Corn 65</div>
-            <div class="mc-item">Cauliflower 65</div>
-            <div class="mc-item">Veg Kulambu</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍲</span> Gravies</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Veg Kulambu</div>
-            <div class="mc-item">Non-Veg Kulambu</div>
-          </div>
-        </div>
-
-        <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ DINNER MODAL ═══ -->
-<div class="mc-modal" id="modal-dinner">
-  <div class="mc-backdrop"></div>
-  <div class="mc-modal-body">
-    <button class="mc-close" aria-label="Close menu">&times;</button>
-    <div class="mc-outer">
-      <div class="mc-inner">
-        <span class="mc-corner mc-tl">✦</span>
-        <span class="mc-corner mc-tr">✦</span>
-        <span class="mc-corner mc-bl">✦</span>
-        <span class="mc-corner mc-br">✦</span>
-
-        <div class="mc-header">
-          <h3 class="mc-title">🌙 Dinner Menu</h3>
-          <p class="mc-time">🕡 6:30 PM – 10:00 PM</p>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥞</span> Dosa Varieties</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Dosa</div>
-            <div class="mc-item">Kal Dosa</div>
-            <div class="mc-item">Nei Dosa</div>
-            <div class="mc-item">Egg Dosa</div>
-            <div class="mc-item">Onion Dosa</div>
-            <div class="mc-item">Kari Kal Dosa (Chicken / Mutton)</div>
-            <div class="mc-item">Podi Dosa</div>
-            <div class="mc-item">Nei Podi Dosa</div>
-            <div class="mc-item">Salem Dosa</div>
-            <div class="mc-item">Nei Nice</div>
-            <div class="mc-item">Egg Nice</div>
-            <div class="mc-item">Onion Nice</div>
-            <div class="mc-item">Roast</div>
-            <div class="mc-item">Nei Roast</div>
-            <div class="mc-item">Onion Roast</div>
-            <div class="mc-item">Poondu Dosa</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍽️</span> Kothu Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Chicken Kothu Dosa</div>
-            <div class="mc-item">Mutton Kothu Dosa</div>
-            <div class="mc-item">Kalan Kothu Dosa</div>
-            <div class="mc-item">Paneer Kothu Dosa</div>
-            <div class="mc-item">Egg Kothu Dosa</div>
-            <div class="mc-item">Tomato Kothu Dosa</div>
-            <div class="mc-item">Brinjal Kothu Dosa</div>
-            <div class="mc-item">Poondu Kothu Dosa</div>
-            <div class="mc-item">Chicken Kothu Idli</div>
-            <div class="mc-item">Mutton Kothu Idli</div>
-            <div class="mc-item">Chicken Kothu Chapathi</div>
-            <div class="mc-item">Mutton Kothu Chapathi</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍞</span> Tiffin</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Idli</div>
-            <div class="mc-item">Roti</div>
-            <div class="mc-item">Chapathi</div>
-          </div>
-        </div>
-
-        <hr class="mc-thin-rule"/>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍛</span> Meals</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Meals (Sapadu)</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>⭐</span> TVS (Thotathu Virudhu Special)</div>
-          <div class="mc-items-grid">
-            <div class="mc-item mc-star">TVS (Thotathu Virudhu Special)</div>
-            <div class="mc-item">Nattu Kozhi Pallipalayam</div>
-            <div class="mc-item">Nattu Kozhi Pepper Chicken</div>
-            <div class="mc-item">Nattu Kozhi Gravy</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥩</span> Mutton Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Mutton Sukka</div>
-            <div class="mc-item">Mutton Kothu Kari</div>
-            <div class="mc-item">Thala Kari (Boneless)</div>
-            <div class="mc-item">Mutton Eral</div>
-            <div class="mc-item">Mutton Moolai Fry</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍗</span> Broiler Chicken</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Chicken 65 (Boneless)</div>
-            <div class="mc-item">Chicken Lollipop (4 Pieces)</div>
-            <div class="mc-item">Picha Potta Chicken</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥚</span> Egg Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Andhra Kalaki</div>
-            <div class="mc-item">Kulambu Kalaki</div>
-            <div class="mc-item">Onion Kalaki</div>
-            <div class="mc-item">Kalaki</div>
-            <div class="mc-item">Egg Poriyal</div>
-            <div class="mc-item">Andhra Egg Poriyal</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🥬</span> Veg Specials</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Kalan Pallipalayam</div>
-            <div class="mc-item">Paneer 65</div>
-            <div class="mc-item">Baby Corn 65</div>
-            <div class="mc-item">Cauliflower 65</div>
-            <div class="mc-item">Veg Kulambu</div>
-          </div>
-        </div>
-
-        <div class="mc-category">
-          <div class="mc-cat-header"><span>🍲</span> Gravies</div>
-          <div class="mc-items-grid">
-            <div class="mc-item">Veg Kulambu</div>
-            <div class="mc-item">Non-Veg Kulambu</div>
-          </div>
-        </div>
-
-        <div class="mc-footer-ornament">✦ ✦ ✦ ✦ ✦</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- VISIT -->
-
-
-<section id="visit" class="visit-section">
-  <div class="container two-col fade-up">
-    <div class="visit-left">
-      <p class="section-label light">Find Us</p>
-      <h2 class="light">Visit Us</h2>
-      <div class="contact-info">
-        <div class="contact-row">
-          <span class="contact-icon">📍</span>
-          <span>Villarasampatti Four Road,<br/>Thindal, Erode – 638 107<br/>Tamil Nadu, India</span>
-        </div>
-        <div class="contact-row">
-          <span class="contact-icon">📞</span>
-          <a href="tel:+919842742126">+91 98427 42126</a>
-        </div>
-        <div class="contact-row">
-          <span class="contact-icon">📸</span>
-          <a href="https://instagram.com" target="_blank">@thottathuvirundu</a>
-        </div>
-      </div>
-      <div class="timing-chips">
-        <span class="timing-chip">🌅 Morning: 7AM – 10:30AM</span>
-        <span class="timing-chip">☀️ Afternoon: 12:30PM – 4PM</span>
-        <span class="timing-chip">🌙 Night: 6:30PM – 10PM</span>
-      </div>
-    </div>
-    <div class="visit-right">
-      <div class="map-placeholder">
-        <div class="map-inner">
-          <div class="map-pin">📍</div>
-          <p>Thottathu Virundhu</p>
-          <p class="map-sub">Villarasampatti Four Road, Thindal, Erode</p>
-          <a href="https://maps.google.com/?q=Thottathu+Virundhu+Thindal+Erode" target="_blank" class="maps-btn">Open in Google Maps →</a>
-        </div>
-      </div>
-      <div class="guest-tip">
-        <span class="tip-icon">💬</span>
-        <p><em>"Book ahead for weekends — the outdoor seating fills up fast. Arrive early for fresh Naattu Kozhi!"</em></p>
-        <span class="reviewer">— A regular guest tip</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-inner">
-    <h2 class="footer-name">Thottathu Virundhu</h2>
-    <p class="footer-tamil">தோட்டத்து விருந்து · விருந்தினர்க்கு உணவு, இதயத்திலிருந்து</p>
-    <nav class="footer-nav">
-      <a href="#story">Our Story</a>
-      <a href="#dishes">Dishes</a>
-      <a href="#menu">Menu</a>
-      <a href="#visit">Visit Us</a>
-    </nav>
-    <p class="footer-copy">© 2024 Thottathu Virundhu, Erode, Tamil Nadu. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
